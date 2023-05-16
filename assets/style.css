@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "raleway";
+}
+
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 8%;
+  background: none;
+  z-index: 2;
+}
+.container .logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: wheat;
+}
+.container .navmenu {
+  display: flex;
+  align-items: center;
+  margin-left: 300px;
+}
+.container .navmenu li:not(:last-child) {
+  padding-right: 25px;
+}
+.container .navmenu li .nav_link {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: wheat;
+  transition: 0.3s ease;
+}
+.container .navmenu li .nav_link:hover,
+.container .navmenu li .nav_link.active {
+  border-bottom: 3px solid coral;
+}
+
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(125deg, lightseagreen, coral);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax h2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 4rem;
+  font-weight: 900;
+  color: wheat;
+  text-shadow: 2px 2px 5px rgba(17, 17, 17, 0.6);
+}
+.parallax h2 small {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: end;
+  letter-spacing: 1px;
+}
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.content {
+  height: 100vh;
+  position: relative;
+  padding: 5rem 10rem;
+  background: #003329;
+  color: whitesmoke;
+}
+.content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.content p {
+  text-align: justify;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+/*# sourceMappingURL=style.css.map */
